@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author agendron
  */
 public class ArrayStack <N> {
-    private int top;
+    private int top = 0;
     private ArrayList<N> data = new ArrayList<>();
     
     public void push(N item) {
