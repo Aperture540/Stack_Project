@@ -15,10 +15,6 @@ public class ArrayStack <N> {
     private int top;
     private ArrayList<N> data = new ArrayList<>();
     
-    /*public ArrayStack() {
-
-    }*/
-    
     public void push(N item) {
         data.add(top, item);
         top++;
