@@ -25,7 +25,7 @@ public class Stack_Project {
         ArrayStack stack = new ArrayStack();
         stack.push("One");
         stack.push(2);
-        stack.push("3.");
+        stack.push(3.0);
         
         System.out.println(stack.pop());
         System.out.println(stack.pop());
