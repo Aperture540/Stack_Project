@@ -12,15 +12,19 @@ import java.util.ArrayList;
  * @author agendron
  */
 public class ArrayStack <N> {
-    private int top = 0;
     private ArrayList<N> data = new ArrayList<>();
     
     public void push(N item) {
-        data.add(top, item);
-        top++;
+        data.add(item);
     }
     
     public N pop() {
-        return data.get(--top);
+        if(data.size()!=0) {
+        N lastItem = data.get(data.size()-1);
+        data.remove(data.size()-1);
+        return lastItem;
+        }
+        
+        return null;
     }
 }

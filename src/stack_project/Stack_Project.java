@@ -5,6 +5,8 @@
  */
 package stack_project;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author agendron
@@ -17,19 +19,15 @@ public class Stack_Project {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        /*class myStack{
-            private ArrayList myList 
-                    
-            public boolean push()
-        }*/
-        ArrayStack stack = new ArrayStack();
-        stack.push("One");
+
+        ArrayStack<Integer> stack = new ArrayStack<>();
+        stack.push(1);
         stack.push(2);
-        stack.push(3.0);
-        
+        stack.push(3);
+
+        System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
     }
-    
 }
